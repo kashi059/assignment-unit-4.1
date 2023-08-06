@@ -7,7 +7,7 @@ console.log('***** Function Practice *****');
 // 1. Function to return 'Hello World!'
 function hello() {
   return 'Hello World!';
-}
+} // end hello
 
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
@@ -19,27 +19,32 @@ hello();
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
   return 'Hello Alex';
-}
+}// end helloName
 // Remember to call the function to test
-helloName();
+console.log(helloName());
+// end helloName
+
+
 // we are mostly just entering text and calling the function here
 
 
 // 3. Function to add two numbers together & return the result
-let firstNumber = 1
-let secondNumber = 2
-function addNumbers(firstNumber) {
+
+function addNumbers(firstNumber, secondNumber) {
    return firstNumber + secondNumber;
 }
 addNumbers();
+console.log('here we are adding two numbers', addNumbers(2222, 3333))
 //we defined firstNumber and secondNumber then put them in a function to add them together
 
 // 4. Function to multiply three numbers & return the result
-let thirdNumber = 3
-function multiplyThree() {
+
+function multiplyThree(firstNumber, secondNumber, thirdNumber) {
   return firstNumber * secondNumber * thirdNumber;
 }
 multiplyThree();
+console.log('here we are maltiplying three numbers', multiplyThree(2222, 3333, 7777))
+
 //we reused first and second number to save space then defined a third number to maltiply them all together for the funtion
 
 // 5. Function that will return true if a number is positive, 
@@ -53,7 +58,9 @@ function isPositive(number) {
 }
 
 isPositive();
-
+console.log('is it posative or is it zero or lower?', isPositive(9283475));
+console.log('is it posative or is it zero or lower?', isPositive(-234));
+console.log('is it posative or is it zero or lower?', isPositive(0));
 // might need to work on 5
 // not sure how to make it unreachable code
 // might have fixed it
@@ -83,7 +90,8 @@ function getLast(array) {
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
   return array.includes(value);
-}
+} // ill watch a video to try and figure this one out
+//I know i used the function includes but its a placeholder for now
 
 // ----------------------
 // Stretch Goals
