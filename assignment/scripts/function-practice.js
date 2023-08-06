@@ -8,56 +8,81 @@ console.log('***** Function Practice *****');
 function hello() {
   return 'Hello World!';
 }
+
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
+hello();
+// we are simply calling the funciton
 
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
-  return;
+  return 'Hello Alex';
 }
 // Remember to call the function to test
+helloName();
+// we are mostly just entering text and calling the function here
 
 
 // 3. Function to add two numbers together & return the result
+let firstNumber = 1
+let secondNumber = 2
 function addNumbers(firstNumber) {
-  // return firstNumber + secondNumber;
+   return firstNumber + secondNumber;
 }
-
+addNumbers();
+//we defined firstNumber and secondNumber then put them in a function to add them together
 
 // 4. Function to multiply three numbers & return the result
+let thirdNumber = 3
 function multiplyThree() {
-
+  return firstNumber * secondNumber * thirdNumber;
 }
-
+multiplyThree();
+//we reused first and second number to save space then defined a third number to maltiply them all together for the funtion
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
+    return true
   }
-  return;
+  if (number <= 0)
+    return false;
 }
+
+isPositive();
+
+// might need to work on 5
+// not sure how to make it unreachable code
+// might have fixed it
+
+
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log('isPositive - should say true', isPositive(3));
 console.log('isPositive - should say false', isPositive(0));
 console.log('isPositive - should say false', isPositive(-3));
-
+// I dont yet know how to do this come back to it ******************************************
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast(array) {
-
+  if (array.length === 0){
+    return undefined;
+    }  else {
+    return array[array.length - 1];
+  }
 }
+// this one may also need some work******************************************
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-
+  return array.includes(value);
 }
 
 // ----------------------
